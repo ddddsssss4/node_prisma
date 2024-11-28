@@ -1,11 +1,12 @@
 import express, { Request, Response } from 'express';
 import { PrismaClient } from '@prisma/client'
-
+import cors from 'cors'
 const prisma = new PrismaClient()
 
 // use `prisma` in your application to read and write data in your DB
 
 const app = express();
+app.use(cors())
 const PORT = process.env.PORT || 3000;
 console.log(process.env.PORT)
 
