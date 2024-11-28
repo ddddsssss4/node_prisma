@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "build": "tsc && prisma generate"
+    "build": "tsc &&  prisma generate"
   },
   "keywords": [],
   "author": "",
